@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<head>
+    <style>
+        body {
+            text-align: center;
+            height: 10vh;
+            background-size: cover;
+            background-position: bottom left;
+            background-image: radial-gradient(circle,rgba(248, 241, 241, 0.274),rgb(12, 12, 12)), url(https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+            background-attachment: fixed;
+        }
+        a{
+            text-decoration: none;
+            color:#fff;
+            transition:all 0.2s;
+        }
+
+        a:hover {
+                color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="row text-center">
+            <div class="col-12">
+                <img src="images/wehome.png" width="400px" />
+                <p style="width:50%; margin:0 auto; color:#fff; font-size:large; font-weight: 500;text-shadow: 2px 2px 10px #000;">Welcome to our Mange company! We are thrilled to have you here and excited to introduce you to our innovative approach to managing employees. With our state-of-the-art system, you can easily add, update, and delete employee information with just a few clicks.</p>
+                <button type="button" class="btn btn-primary rounded-pill mt-4" style="background-color:#38B6FF;"><a  asp-controller="Employees" asp-action="Index" style="">Start Now</a></button>
+
+            </div>
+         
+
+        </div>
+    </header>
+</body>
+

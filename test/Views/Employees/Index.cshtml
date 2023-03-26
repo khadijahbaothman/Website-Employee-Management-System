@@ -1,0 +1,45 @@
+﻿@model List<test.Models.Domain.Employee>
+
+@{
+}
+
+
+
+<h1 class="mb-4">Employees</h1>
+
+<table class="table text-center">
+
+    <thead class="thead-dark" style="background-color:#38B6FF">
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Salary</th>
+            <th scope="col">Date of Birth</th>
+            <th scope="col">Department</th>
+            <th scope="col"> </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var employee in Model)
+        {
+            <tr>
+                <td>@employee.Id</td>
+                <td>@employee.Name</td>
+                <td>@employee.Email</td>
+                <td>@employee.Salary</td>
+                <td>@employee.DateOfBirth</td>
+                <td>@employee.Department</td>
+                <td><a href="Employees/View/@employee.Id" class=" btn btn-primary">View</a></td>
+            </tr>
+            
+        }
+    </tbody>
+
+
+
+</table>
+
+
+
+
